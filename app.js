@@ -13,9 +13,7 @@ app.use(bodyParser.json());
 
 const mongodb_uri = process.env.MONGODB_URI;
 // MongoDB connection
-mongoose.connect(
-  "mongodb+srv://sapanats:Paypal123@cluster0.yc96cdz.mongodb.net/?retryWrites=true&w=majority"
-);
+mongoose.connect(mongodb_uri);
 
 const db = mongoose.connection;
 
